@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    
+
+</head>
+<body>
+    <div >
+        <h2>Book Entry</h2>
+        <form id="bookForm">
+            <div >
+                <label for="bookName">Book Name:</label>
+                <input type="text"  id="bookName" name="bookName">
+                <small id="bookNameError"></small>
+            </div>
+            <div >
+                <label for="author">Author:</label>
+                <input type="text"  id="author" name="author">
+            </div>
+            <div >
+                <label for="publishingDate">Publishing Date:</label>
+                <input type="date"  id="publishingDate" name="publishingDate">
+            </div>
+            <div >
+                <label for="price">Price:</label>
+                <input type="number"  id="price" name="price">
+                <small id="priceError" ></small>
+            </div>
+            <div >
+                <label>Language:</label><br>
+                <input type="checkbox" id="hindi" name="language" value="Hindi"> Hindi<br>
+                <input type="checkbox" id="english" name="language" value="English"> English<br>
+                <input type="checkbox" id="m" name="language" value="M"> M<br>
+                <small id="languageError" ></small>
+            </div>
+            <button type="button" id="submitButton">Show Book Details</button>
+        </form>
+
+        <h2 >Book Details</h2>
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Publishing Date</th>
+                    <th>Price</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Book details will be added here -->
+            </tbody>
+        </table>
+    </div>
+
+   <!-- Load jQuery from CDN -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!-- Load your custom JavaScript file -->
+   <script src="app.js"></script>
+</body>
+</html>
